@@ -26,11 +26,13 @@ const Footer: FC = () => {
         name: "Careers",
         uri: "https://cavies.notion.site/Job-Board-320ac7987dc64a53b0d3d3e7c52c5ce7",
       },
-      { name: "Legal Notice", uri: "/legal/legal-notice", newWindow: false },
+      {
+        name: "Legal Notice",
+        uri: "https://cavies.xyz/legal/legal-notice",
+      },
       {
         name: "Privacy Notice",
-        uri: "/legal/privacy-notice",
-        newWindow: false,
+        uri: "https://cavies.xyz/legal/privacy-notice",
       },
       {
         name: "Media Kit",
@@ -51,42 +53,19 @@ const Footer: FC = () => {
   );
 
   return (
-    <div className="footer pt-[80px]">
-      <div className="border-t-[#D2D7DF] dark:border-t-borderColorDark border-t-[1px]">
-        <div className="md:px-[40px] px-[20px] lg:max-w-[1180px] lg:mx-auto">
+    <div className="footer">
+      <div>
+        <div className="md:px-[40px] px-[20px] lg:max-w-[1401px] lg:mx-auto">
           <div className="flex items-center pt-[20px]">
-            <div className="md:float-left logo-wrapper w-[100%] md:w-[60%] lg:w-[70%]">
+            <div className="bottom-menu-wrapper float-left w-[60%] md:w-[27%] lg:w-[60%] hidden md:block">
               <img
                 src="/assets/images/logo.png"
-                className="w-[75px] md:w-[79.62px] ml-auto mr-auto md:ml-[0px] dark:hidden"
+                className="w-[75px] md:w-[400px] ml-auto mr-auto md:ml-[0px] dark:hidden"
               />
               <img
                 src="/assets/images/logo-dark.png"
-                className="w-[75px] md:w-[79.62px] ml-auto mr-auto md:ml-[0px] hidden dark:block"
+                className="w-[75px] md:w-[400px] ml-auto mr-auto md:ml-[0px] hidden dark:block"
               />
-            </div>
-            <div className="md:float-right menu-wrapper py-[20px] w-[100%] hidden md:block">
-              <ul className="footer-menu w-[100%]">
-                {socialItems.map((item, index) => (
-                  <li
-                    key={`footer-item-${index}`}
-                    className="ml-[20px] md:ml-[30px] cursor-pointer float-right"
-                    onClick={() => window.open(item.uri)}
-                  >
-                    <img
-                      src={item.image}
-                      className="text-[10px] md:text-[16px] w-[15px] h-[15px] md:w-[18px] md:h-[18px]"
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="flex">
-            <div className="bottom-menu-wrapper float-left w-[60%] md:w-[27%] lg:w-[60%] hidden md:block">
-              <p className="text-footerItemColor dark:text-footerItemColorDark text-[12px] md:text-[14px] mr-[20px] regular-text">
-                © 2022 Cavies Ltd.
-              </p>
             </div>
             <div className="float-right menu-wrapper w-[100%] md:pt-0 pt-[20px]">
               <ul className="footer-menu w-[100%] flex justify-center flex-wrap md:justify-end">

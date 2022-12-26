@@ -89,12 +89,12 @@ p {
 
 .circle-purple {
   border-radius: 50%;
-  background-color: rgba(185, 152, 251, 0.1);
+  background-color: #C8C0DC;
 }
 
 .circle-green {
   border-radius: 50%;
-  background-color: rgba(104, 213, 157, 0.1);
+  background-color: #5AC37D;
 }
 
 [data-theme="dark"] .circle-purple {

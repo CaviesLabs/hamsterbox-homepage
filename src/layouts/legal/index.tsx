@@ -305,7 +305,7 @@ const LegalLayout: FC<Props> = ({ slug }) => {
       <Head>{docTitle && <title>{`Cavies Labs | ${docTitle}`}</title>}</Head>
       <div
         className={classnames(
-          "px-[20px] md:mx-[40px] lg:mx-auto w-full lg:max-w-[1180px] pt-[50px]",
+          "px-[20px] md:mx-[40px] lg:mx-auto w-full lg:max-w-[1401px] pt-[50px]",
           styles["legal-content"]
         )}
       >
