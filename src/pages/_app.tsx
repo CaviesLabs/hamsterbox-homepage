@@ -1,6 +1,5 @@
 import type { AppProps } from "next/app";
 import { FC } from "react";
-import { CookieConnsentComponent } from "@/src/components/cookie-consent";
 import { ThemeProvider } from "next-themes";
 
 import "../../styles/globals.css";
@@ -18,7 +17,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider>
         <AppComponent {...{ Component, pageProps }} />
-        <CookieConnsentComponent />
       </ThemeProvider>
     </>
   );
