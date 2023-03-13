@@ -52,4 +52,10 @@ export const HomeStyled = styled.div`
       color: #fff;
     }
   }
+
+  .tst {
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+      -1px -1px #fff, 1px -1px #fff, -1px 1px #fff !important;
+    color: #c9c0dc !important;
+  }
 `;

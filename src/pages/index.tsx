@@ -4,6 +4,9 @@ import Head from "next/head";
 import MainLayout from "@/src/layouts/main";
 import { CenterContainer } from "@/src/components/center-container";
 import { HomeStyled } from "@/styles/home.styled";
+import { SwapContainer } from "@/src/components/swap-container";
+import { VideoIntro } from "@/src/components/video-intro";
+import { MoneyContainer } from "@/src/components/money-container";
 
 const Home: NextPage = () => {
   const handleContactUs = () => {
@@ -45,6 +48,16 @@ const Home: NextPage = () => {
       <HomeStyled>
         <div>
           <CenterContainer>
+            <div className="w-full h-auto md:mx-auto text-center relative md:hidden">
+              <img
+                src="/assets/images/hamster-opendoor.png"
+                className="w-[100%] h-auto md:mt-[-70px] md:mx-auto dark:hidden"
+              ></img>
+              <img
+                src="/assets/images/hamster-opendoor-dark.png"
+                className="w-[100%] h-auto md:mt-[-70px] md:mx-auto hidden dark:block"
+              ></img>
+            </div>
             <div className="flex items-center">
               <p className="text-[70px] md:text-[150px] bold-text float-left text-strongTitle dark:text-strongTitleDark">
                 hamsterbox
@@ -55,8 +68,8 @@ const Home: NextPage = () => {
               Your ultimate destination for onboarding and discovering Web3
             </p>
             <div className="relative top-inf md:flow-root" id="about-us">
-              <div className="md:float-right relative md:w-[40%] md:pl-[20px] md:pt-0 pt-[50px] order-0 md:order-1">
-                <div className="md:w-[140%] w-[100%] h-auto md:mt-[-40px] md:mx-auto text-center relative left-[-220px]">
+              <div className="md:float-right relative md:w-[40%] md:pl-[20px] md:pt-0 pt-[50px] order-0 md:order-1 hidden md:block">
+                <div className="md:w-[140%] w-full h-auto md:mt-[-40px] md:mx-auto text-center relative md:left-[-220px]">
                   <img
                     src="/assets/images/hamster-opendoor.png"
                     className="w-[100%] h-auto md:mt-[-70px] md:mx-auto dark:hidden"
@@ -67,7 +80,7 @@ const Home: NextPage = () => {
                   ></img>
                 </div>
               </div>
-              <div className="md:float-left md:order-0 relative pt-[100px] md:pt-0 md:w-[60%]">
+              <div className="md:float-left md:order-0 relative md:pt-[100px] md:pt-0 md:w-[60%]">
                 <div className="circle-purple absolute w-[47px] h-[47px] left-[-20px]" />
                 <div>
                   <Fade duration={600} direction="up">
@@ -92,40 +105,39 @@ const Home: NextPage = () => {
                 className="scroll-down-btn mvup hidden md:block"
               />
             </div>
-            <Fade duration={600} direction="up">
-              <p className="text-center text-[20px] md:text-[30px] bold-text text-strongTitle dark:text-strongTitleDark mt-[60px]">
-                Your ultimate destination for onboarding and discovering Web3
-              </p>
-            </Fade>
           </CenterContainer>
-          <div className="trapezoidContainer mt-[200px]">
-            <div className="header-container">
-              <div className="trapezoid border-t-[300px] border-t-solid border-t-green dark:border-t-greenDark">
-                <p className="relative top-[-280px] text-[83px] bold-text float-right text-white dark:text-strongTitle max-w-[600px] leading-[100px] text-left">
-                  Hamsterbox vav powered Games
-                </p>
+          <SwapContainer />
+          <VideoIntro />
+          {/* 
+            <div className="trapezoidContainer">
+              <div className="header-container">
+                <div className="trapezoid border-t-[300px] border-t-solid border-t-green dark:border-t-greenDark">
+                  <p className="relative top-[-280px] text-[83px] bold-text float-right text-white dark:text-strongTitle max-w-[600px] leading-[100px] text-left">
+                    Hamsterbox vav powered Games
+                  </p>
+                </div>
+                <div className="trapezoid-right border-b-[300px] border-b-solid border-b-purple dark:border-b-purpleDark">
+                  <p className="relative bottom-[-18px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[100px] text-left">
+                    Typical
+                  </p>
+                  <p className="relative left-[-20px] bottom-[-28px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[80px] text-left">
+                    Web3
+                  </p>
+                  <p className="relative left-[-40px] bottom-[-28px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[80px] text-left">
+                    Games
+                  </p>
+                </div>
               </div>
-              <div className="trapezoid-right border-b-[300px] border-b-solid border-b-purple dark:border-b-purpleDark">
-                <p className="relative bottom-[-18px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[100px] text-left">
-                  Typical
-                </p>
-                <p className="relative left-[-20px] bottom-[-28px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[80px] text-left">
-                  Web3
-                </p>
-                <p className="relative left-[-40px] bottom-[-28px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[80px] text-left">
-                  Games
-                </p>
+              <div className="body-container py-[50px] bg-green dark:bg-greenDark">
+                <img
+                  src="/assets/images/game-flows.png"
+                  alt="Image flow image"
+                  className="w-[50%] h-auto mx-auto"
+                />
               </div>
             </div>
-            <div className="body-container py-[50px] bg-green dark:bg-greenDark">
-              <img
-                src="/assets/images/game-flows.png"
-                alt="Image flow image"
-                className="w-[50%] h-auto mx-auto"
-              />
-            </div>
-          </div>
-          <CenterContainer>
+           */}
+          {/* <CenterContainer>
             <div
               className="objectives mt-[350px] md:mt-[150px] md:inline-flex"
               id="objectives"
@@ -195,8 +207,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-          </CenterContainer>
-          <div className="bg-purple border-t-white border-t-solid border-b-white border-b-solid dark:border-t-[10px] dark:border-b-[10px]">
+          </CenterContainer> */}
+          <MoneyContainer />
+          {/* <div className="bg-purple border-t-white border-t-solid border-b-white border-b-solid dark:border-t-[10px] dark:border-b-[10px]">
             <CenterContainer>
               <div
                 className="objectives mt-[350px] md:mt-[150px] md:inline-flex"
@@ -275,7 +288,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-          </CenterContainer>
+          </CenterContainer> */}
         </div>
         <div className="bg-[#282828] dark:bg-strongTitle pb-[100px]">
           <div className="dark:bg-[#D9D9D9] pt-[100px]">

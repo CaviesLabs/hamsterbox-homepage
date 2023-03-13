@@ -5,6 +5,10 @@ import { ThemeProvider } from "next-themes";
 import "../../styles/globals.css";
 import "../../styles/globals.scss";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+
 const AppComponent: FC<{ Component: any; pageProps: any }> = ({
   Component,
   pageProps,
