@@ -100,7 +100,7 @@ export const MobileSwapSlide: FC = () => {
             <div className="flex justify-center">
               <div className="float-left w-[40%] md:w-[35%]">
                 <img
-                  src="/assets/images/hamsterbox/swap/3.png"
+                  src="/assets/images/hamsterbox/swap/2.png"
                   alt="hamster"
                   className="w-full h-auto"
                 />

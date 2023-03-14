@@ -44,13 +44,13 @@ export const MobileSwapSlide: FC = () => {
   return (
     <div className="w-full h-auto lg:hidden pb-[70px]">
       <div className="-rotate-2">
-        <div className="bg-purple border-[2px] border-solid border-black lg:px-[70px] py-[3px] lg:inline-block">
+        <div className="bg-yellow border-[2px] border-solid border-black lg:px-[70px] py-[3px] lg:inline-block">
           <p className="uppercase text-white lg:text-[74px] md:text-[40px] text-[40px] bold-text pl-[20px]">
-            hamsterswap
+            HAMSTERMONEY
           </p>
         </div>
         <p className="uppercase text-black text-[20px] md:text-[27px] bold-text pl-[20px]">
-          TRUSTLESS PEER-TO-PEER SWAP PROTOCOL
+          GLOBAL WEB3 DIGITAL STORE
         </p>
       </div>
       <Swiper
@@ -75,7 +75,58 @@ export const MobileSwapSlide: FC = () => {
             <div className="flex justify-center">
               <div className="float-left w-[40%] md:w-[35%]">
                 <img
-                  src="/assets/images/hamsterbox/swap/1.png"
+                  src="/assets/images/hamsterbox/money/1.png"
+                  alt="hamster"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="float-left md:w-[50%] flex items-center">
+                <div className="max-w-[200px] md:max-w-full text-center">
+                  <Badge
+                    overlayBadge={false}
+                    message="trustless"
+                    className="mx-auto mt-[10px] md:text-[30px]"
+                  />
+                  <p className="text-black text-[14px] md:text-[40px] semi-bold-text text-center mx-auto md:max-w-full">
+                    PURCHASE in-app items DIRECTLY USING YOUR WEB3 WALLET
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center items-center md:px-0 px-[20px]">
+            <div className="flex justify-center">
+              <div className="float-left w-[40%] md:w-[35%]">
+                <img
+                  src="/assets/images/hamsterbox/money/2.png"
+                  alt="hamster"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="float-left md:w-[50%] flex items-center">
+                <div className="max-w-[200px] md:max-w-full text-center">
+                  <Badge
+                    overlayBadge={false}
+                    message="MULTI-APP"
+                    className="mx-auto mt-[10px] md:text-[30px]"
+                  />
+                  <p className="text-black text-[14px] md:text-[40px] semi-bold-text text-center mx-auto md:max-w-full">
+                    EXPLORE VARIOUS THIRD-PARTY in-app items, top-ups and
+                    vouchers
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center items-center md:px-0 px-[20px]">
+            <div className="flex justify-center">
+              <div className="float-left w-[40%] md:w-[35%]">
+                <img
+                  src="/assets/images/hamsterbox/money/3.png"
                   alt="hamster"
                   className="w-full h-auto"
                 />
@@ -84,61 +135,11 @@ export const MobileSwapSlide: FC = () => {
                 <div className="max-w-[200px] md:max-w-full text-center">
                   <Badge
                     overlayBadge={true}
-                    message="trustless"
+                    message="EFFORTLESS"
                     className="mx-auto mt-[10px] md:text-[30px]"
                   />
                   <p className="text-black text-[14px] md:text-[40px] semi-bold-text text-center mx-auto md:max-w-full">
-                    All swaps are powered by smart contracts
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center md:px-0 px-[20px]">
-            <div className="flex justify-center">
-              <div className="float-left w-[40%] md:w-[35%]">
-                <img
-                  src="/assets/images/hamsterbox/swap/3.png"
-                  alt="hamster"
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="float-left md:w-[50%] flex items-center">
-                <div className="max-w-[200px] md:max-w-full text-center">
-                  <Badge
-                    overlayBadge={false}
-                    message="cross-chain"
-                    className="mx-auto mt-[10px] md:text-[30px]"
-                  />
-                  <p className="text-black text-[14px] md:text-[40px] semi-bold-text text-center mx-auto md:max-w-full">
-                    SUPPORT SWAPS BETWEEN MULTIPLE CHAINS SEAMLESSLY
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center md:px-0 px-[20px]">
-            <div className="flex justify-center">
-              <div className="float-left w-[40%] md:w-[35%]">
-                <img
-                  src="/assets/images/hamsterbox/swap/3.png"
-                  alt="hamster"
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="float-left md:w-[50%] flex items-center">
-                <div className="max-w-[200px] md:max-w-full text-center">
-                  <Badge
-                    overlayBadge={false}
-                    message="cross-chain"
-                    className="mx-auto mt-[10px] md:text-[30px]"
-                  />
-                  <p className="text-black text-[14px] md:text-[40px] semi-bold-text text-center mx-auto md:max-w-full">
-                    SUPPORT SWAPS BETWEEN MULTIPLE CHAINS SEAMLESSLY
+                    BUY FOR YOURSELF OR GIFT TO OTHERS, NO QUESTIONS ASKED!
                   </p>
                 </div>
               </div>

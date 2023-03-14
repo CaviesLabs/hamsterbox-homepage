@@ -15,7 +15,7 @@ export const SwapContainer: FC = () => {
           <img
             src="/assets/images/hamsterbox/hamsterswap.png"
             alt="Hamsterswap"
-            className="md:w-full md:w-auto w-[80%] h-[auto] mx-auto"
+            className="md:w-[70%] lg:w-[70%] md:w-auto w-[80%] h-[auto] mx-auto"
           />
         </div>
         <div className="col-span-1 hidden lg:block">
@@ -34,14 +34,14 @@ export const SwapContainer: FC = () => {
               <img
                 src="/assets/images/hamsterbox/swap/1.png"
                 alt="hamster"
-                className="md:w-[202px] md:h-[202px] w-[152px] h-[152px] mx-auto"
+                className="xl:w-[202px] lg:w-[150px] w-[152px] h-auto mx-auto"
               />
               <Badge
                 overlayBadge={true}
                 message="trustless"
                 className="mx-auto"
               />
-              <p className="text-black text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px]">
+              <p className="text-black text-[16px] lg:text-[14px] xl:text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px] mt-[3px]">
                 All swaps are powered by smart contracts
               </p>
             </div>
@@ -51,27 +51,27 @@ export const SwapContainer: FC = () => {
                 message="flexible"
                 className="mx-auto"
               />
-              <p className="text-black text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px]">
+              <p className="text-black text-[16px] lg:text-[14px] xl:text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px] mt-[3px]">
                 single or multiple assets and swap options
               </p>
               <img
                 src="/assets/images/hamsterbox/swap/2.png"
                 alt="hamster"
-                className="md:w-[202px] md:h-[202px] w-[152px] h-[152px] mx-auto mt-[10px]"
+                className="xl:w-[202px] lg:w-[150px] w-[152px] h-auto mx-auto mt-[10px]"
               />
             </div>
             <div className="col-span-1 text-center">
               <img
                 src="/assets/images/hamsterbox/swap/3.png"
                 alt="hamster"
-                className="md:w-[202px] md:h-[202px] w-[152px] h-[152px] mx-auto"
+                className="xl:w-[202px] lg:w-[150px] w-[152px] h-auto mx-auto"
               />
               <Badge
                 overlayBadge={false}
                 message="cross-chain"
                 className="mx-auto mt-[10px]"
               />
-              <p className="text-black text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px]">
+              <p className="text-black text-[16px] lg:text-[14px] xl:text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px] mt-[3px]">
                 SUPPORT SWAPS BETWEEN MULTIPLE CHAINS SEAMLESSLY
               </p>
             </div>

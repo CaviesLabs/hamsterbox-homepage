@@ -7,6 +7,7 @@ import { HomeStyled } from "@/styles/home.styled";
 import { SwapContainer } from "@/src/components/swap-container";
 import { VideoIntro } from "@/src/components/video-intro";
 import { MoneyContainer } from "@/src/components/money-container";
+import { HamsterToolContainer } from "@/src/components/hamster-tools";
 
 const Home: NextPage = () => {
   const handleContactUs = () => {
@@ -108,193 +109,14 @@ const Home: NextPage = () => {
           </CenterContainer>
           <SwapContainer />
           <VideoIntro />
-          {/* 
-            <div className="trapezoidContainer">
-              <div className="header-container">
-                <div className="trapezoid border-t-[300px] border-t-solid border-t-green dark:border-t-greenDark">
-                  <p className="relative top-[-280px] text-[83px] bold-text float-right text-white dark:text-strongTitle max-w-[600px] leading-[100px] text-left">
-                    Hamsterbox vav powered Games
-                  </p>
-                </div>
-                <div className="trapezoid-right border-b-[300px] border-b-solid border-b-purple dark:border-b-purpleDark">
-                  <p className="relative bottom-[-18px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[100px] text-left">
-                    Typical
-                  </p>
-                  <p className="relative left-[-20px] bottom-[-28px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[80px] text-left">
-                    Web3
-                  </p>
-                  <p className="relative left-[-40px] bottom-[-28px] text-[83px] bold-text text-strongTitle dark:text-strongTitleDark max-w-[600px] leading-[80px] text-left">
-                    Games
-                  </p>
-                </div>
-              </div>
-              <div className="body-container py-[50px] bg-green dark:bg-greenDark">
-                <img
-                  src="/assets/images/game-flows.png"
-                  alt="Image flow image"
-                  className="w-[50%] h-auto mx-auto"
-                />
-              </div>
-            </div>
-           */}
-          {/* <CenterContainer>
-            <div
-              className="objectives mt-[350px] md:mt-[150px] md:inline-flex"
-              id="objectives"
-            >
-              <div className="md:float-left md:w-[50%] relative bottom-[-134px]">
-                <img
-                  src="/assets/images/hamster-phone.png"
-                  alt="Hamster phone"
-                  className="w-[80%] h-auto dark:hidden"
-                />
-                <img
-                  src="/assets/images/hamster-phone-dark.png"
-                  alt="Hamster phone"
-                  className="w-[80%] h-auto hidden dark:block"
-                />
-              </div>
-              <div className="md:float-left md:w-[50%]">
-                <p className="bold-text text-strongTitle dark:text-strongTitleDark text-[90px] uppercase">
-                  Buy, Sell and Explore NFTs
-                </p>
-                <div className="flex">
-                  <div className="float-left">
-                    <img
-                      src="/assets/images/hamster-rotate-dot.png"
-                      alt="Hamster rotate"
-                      className="w-[300px] h-auto dark:hidden"
-                    />
-                    <img
-                      src="/assets/images/hamster-rotate-dot-dark.png"
-                      alt="Hamster rotate"
-                      className="w-[300px] h-auto hidden dark:block"
-                    />
-                    <p className="semi-bold-text w-[250px] text-center relative top-[-20px] text-strongTitle dark:text-strongTitleDark mx-auto">
-                      all in one market and agregator for gaming nfts
-                    </p>
-                  </div>
-                  <div className="float-left pl-[80px]">
-                    <p className="semi-bold-text w-[250px] text-center relative mt-[90px] text-strongTitle dark:text-strongTitleDark mx-auto">
-                      all in one market and agregator for gaming nfts
-                    </p>
-                    <img
-                      src="/assets/images/hamster-rotate-dot.png"
-                      alt="Hamster rotate"
-                      className="w-[300px] h-auto dark:hidden"
-                    />
-                    <img
-                      src="/assets/images/hamster-rotate-dot-dark.png"
-                      alt="Hamster rotate"
-                      className="w-[300px] h-auto hidden dark:block"
-                    />
-                  </div>
-                  <div className="float-left relative right-[-35%]">
-                    <img
-                      src="/assets/images/hamster-rotate-dot.png"
-                      alt="Hamster rotate"
-                      className="w-[300px] h-auto dark:hidden"
-                    />
-                    <img
-                      src="/assets/images/hamster-rotate-dot-dark.png"
-                      alt="Hamster rotate"
-                      className="w-[300px] h-auto hidden dark:block"
-                    />
-                    <p className="semi-bold-text w-[250px] text-center relative top-[-20px] text-strongTitle dark:text-strongTitleDark mx-auto">
-                      all in one market and agregator for gaming nfts
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CenterContainer> */}
           <MoneyContainer />
-          {/* <div className="bg-purple border-t-white border-t-solid border-b-white border-b-solid dark:border-t-[10px] dark:border-b-[10px]">
-            <CenterContainer>
-              <div
-                className="objectives mt-[350px] md:mt-[150px] md:inline-flex"
-                id="objectives"
-              >
-                <div className="md:float-left md:w-[50%]">
-                  <p className="bold-text text-strongTitleDark text-[90px] uppercase">
-                    make instant in app purchases
-                  </p>
-                  <div className="flex">
-                    <div className="float-left relative left-[-50%] top-[50px]">
-                      <p className="semi-bold-text w-[250px] text-center relative text-strongTitleDark mx-auto">
-                        all in one market and agregator for gaming nfts
-                      </p>
-                      <img
-                        src="/assets/images/hamster-rotate-dot.png"
-                        alt="Hamster rotate"
-                        className="w-[300px] h-auto"
-                      />
-                    </div>
-                    <div className="float-left relative left-[-35%]">
-                      <img
-                        src="/assets/images/hamster-rotate-dot.png"
-                        alt="Hamster rotate"
-                        className="w-[300px] h-auto"
-                      />
-                      <p className="semi-bold-text w-[250px] text-center relative top-[-20px] text-strongTitleDark mx-auto">
-                        all in one market and agregator for gaming nfts
-                      </p>
-                    </div>
-                    <div className="float-left relative left-[-15%]">
-                      <p className="semi-bold-text w-[250px] text-center relative mt-[90px] text-strongTitleDark mx-auto">
-                        all in one market and agregator for gaming nfts
-                      </p>
-                      <img
-                        src="/assets/images/hamster-rotate-dot.png"
-                        alt="Hamster rotate"
-                        className="w-[300px] h-auto"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="md:float-left md:w-[50%] flow-root">
-                  <img
-                    src="/assets/images/hamster-phone-water.png"
-                    alt="Hamster phone"
-                    className="w-[80%] h-auto float-right"
-                  />
-                </div>
-              </div>
-            </CenterContainer>
-          </div>
-          <CenterContainer>
-            <div
-              className="objectives mt-[350px] md:mt-[150px] md:inline-flex"
-              id="objectives"
-            >
-              <div className="md:float-left md:w-[50%]">
-                <img
-                  src="/assets/images/hamster-phone-sleep.png"
-                  alt="Hamster phone"
-                  className="w-[80%] h-auto dark:hidden"
-                />
-                <img
-                  src="/assets/images/hamster-phone-sleep-dark.png"
-                  alt="Hamster phone"
-                  className="w-[80%] h-auto hidden dark:block"
-                />
-              </div>
-              <div className="md:float-left md:w-[50%]">
-                <p className="bold-text text-strongTitle dark:text-strongTitleDark text-[90px] uppercase">
-                  intuitive and easy to intergrate sdk
-                </p>
-                <p className="text-[16px] md:text-[24px] text-strongTitle dark:text-strongTitleDark bold-text">
-                  ACCESS AND WHITE-LABEL SOLUTIONS!
-                </p>
-              </div>
-            </div>
-          </CenterContainer> */}
+          <HamsterToolContainer />
         </div>
         <div className="bg-[#282828] dark:bg-strongTitle pb-[100px]">
           <div className="dark:bg-[#D9D9D9] pt-[100px]">
             <CenterContainer>
               <p className="bold-text text-[150px] text-white dark:text-strongTitle leading-[140px] uppercase">
-                Explore the metaverse
+                INFINITE POSSIBILITIES
               </p>
             </CenterContainer>
           </div>

@@ -24,27 +24,27 @@ export const MoneyContainer: FC = () => {
                 message="NON-CUSTODIAL"
                 className="mx-auto"
               />
-              <p className="text-black text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px]">
+              <p className="text-black text-[16px] lg:text-[14px] xl:text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px] mt-[3px]">
                 PURCHASE in-app items DIRECTLY USING YOUR WEB3 WALLET
               </p>
               <img
                 src="/assets/images/hamsterbox/money/1.png"
                 alt="hamster"
-                className="md:w-[202px] md:h-[202px] w-[152px] h-[152px] mx-auto"
+                className="xl:w-[202px] lg:w-[150px] w-[152px] h-auto mx-auto"
               />
             </div>
             <div className="col-span-1 text-center relative top-[-10px]">
               <img
                 src="/assets/images/hamsterbox/money/2.png"
                 alt="hamster"
-                className="md:w-[202px] md:h-[202px] w-[152px] h-[152px] mx-auto mt-[10px]"
+                className="xl:w-[202px] lg:w-[150px] w-[152px] h-auto mx-auto"
               />
               <Badge
                 overlayBadge={false}
                 message="MULTI-app"
                 className="mx-auto mt-[10px]"
               />
-              <p className="text-black text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px]">
+              <p className="text-black text-[16px] lg:text-[14px] xl:text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px] mt-[3px]">
                 EXPLORE VARIOUS THIRD-PARTY in-app items, top-ups and vouchers
               </p>
             </div>
@@ -54,13 +54,13 @@ export const MoneyContainer: FC = () => {
                 message="EFFORTLESS"
                 className="mx-auto mt-[10px]"
               />
-              <p className="text-black text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px]">
+              <p className="text-black text-[16px] lg:text-[14px] xl:text-[16px] semi-bold-text text-center mx-auto md:max-w-[250px] mt-[3px]">
                 BUY FOR YOURSELF OR GIFT TO OTHERS, NO QUESTIONS ASKED!
               </p>
               <img
                 src="/assets/images/hamsterbox/money/3.png"
                 alt="hamster"
-                className="md:w-[202px] md:h-[202px] w-[152px] h-[152px] mx-auto"
+                className="xl:w-[202px] lg:w-[150px] w-[152px] h-auto mx-auto"
               />
             </div>
           </div>
@@ -69,7 +69,7 @@ export const MoneyContainer: FC = () => {
           <img
             src="/assets/images/hamsterbox/hamstermoney.png"
             alt="Hamsterswap"
-            className="md:w-full md:w-auto w-[80%] h-[auto] mx-auto"
+            className="md:w-[70%] lg:w-[70%] md:w-auto w-[80%] h-[auto] mx-auto"
           />
         </div>
         <MobileSwapSlide />

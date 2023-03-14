@@ -58,4 +58,9 @@ export const HomeStyled = styled.div`
       -1px -1px #fff, 1px -1px #fff, -1px 1px #fff !important;
     color: #c9c0dc !important;
   }
+  .tst-green {
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+      -1px -1px #000, 1px -1px #000, -1px 1px #000 !important;
+    color: #5ac37d !important;
+  }
 `;

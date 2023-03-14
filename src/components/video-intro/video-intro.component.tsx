@@ -34,7 +34,7 @@ export const VideoIntro: FC = () => {
           </div>
         </div>
       </div>
-      <div className="md:px-[50px] px-[20px] py-[30px] bg-green border-b-[3px] border-solid border-black">
+      <div className="md:px-[150px] px-[20px] md:py-[50px] py-[30px] bg-green border-b-[3px] border-solid border-black">
         <div className="relative rounded-[50px]">
           {/* <img
             src="/assets/images/hamsterbox/videointro.png"
