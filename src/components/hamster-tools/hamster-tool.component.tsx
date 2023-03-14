@@ -20,11 +20,11 @@ export const HamsterToolContainer: FC = () => {
           TOOLS
         </p>
       </div>
-      <div className="bg-green md:px-[50px] px-[20px] py-[50px]">
+      <div className="bg-green md:px-[30px] xl:px-[50px] px-[20px] py-[50px]">
         <img
           src="/assets/images/hamsterbox/hamstertool.png"
           alt="EX"
-          className="md:w-[70%] h-auto mx-auto w-full"
+          className="md:w-full xl:w-[70%] h-auto mx-auto w-full"
         />
         <p className="max-w-[480px] mx-auto text-black bold-text md:text-[24px] text-[14px] uppercase text-center mt-[30px]">
           WALLET MIGRATOR WANT TO SWEEP ALL ASSETS TO ANOTHER WALLETS? WE GOT
